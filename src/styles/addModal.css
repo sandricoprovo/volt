@@ -1,0 +1,86 @@
+.modal__container {
+  background-color: var(--black);
+  border: 2px solid var(--highlight-color);
+  border-radius: var(--border-radius);
+  position: absolute;
+  left: auto;
+  top: 35%;
+  z-index: 3;
+  width: 300px;
+  height: 250px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2.6px 16.5px rgba(0, 0, 0, 0.087),
+    0 -3.7px 41.7px rgba(0, 0, 0, 0.125), 0 2.6px 85.1px rgba(0, 0, 0, 0.147),
+    0 26.3px 175.2px rgba(0, 0, 0, 0.175), 0 129px 480px rgba(0, 0, 0, 0.37);
+}
+
+.modal__container-closed {
+  display: none;
+}
+
+.form__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__header {
+  color: var(--highlight-color);
+}
+
+.form__btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input[name="new-link"] {
+  width: 80%;
+  height: 24px;
+  padding: 8px;
+  background-color: var(--black);
+  color: var(--grey);
+  text-align: center;
+  border: 2px solid var(--highlight-color);
+  border-radius: var(--border-radius);
+  font-size: var(--paragraph);
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.modal__response {
+  margin: 8px;
+  text-align: center;
+  font-size: var(--overline);
+  color: var(--grey);
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.modal__btn {
+  background-color: var(--black);
+  color: var(--highlight-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 32px;
+  font-size: var(--overline);
+  font-family: "Inter";
+  font-weight: 500;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.link__save:hover {
+  background-color: var(--highlight-color);
+  color: var(--black);
+}
+
+.link__cancel:hover {
+  color: var(--danger-color);
+}

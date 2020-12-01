@@ -1,0 +1,30 @@
+.list__container {
+  background-color: var(--black);
+  flex: 1 0 70%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__header {
+  color: var(--grey);
+  margin-bottom: 8px;
+}
+
+.list__container > div {
+  margin: 0;
+  padding: 24px 12px;
+  height: 530px;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+
+.list__count {
+  color: var(--grey);
+}

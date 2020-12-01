@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="46px" viewBox="0 0 140 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Volt-Logo" transform="translate(0.000000, 1.000000)">
+            <g id="Group">
+                <g id="Volt-Logo" transform="translate(95.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#FFD318" x="0" y="7" width="45" height="5" rx="1"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#FFD318" x="0" y="25" width="35" height="5" rx="1"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#FFD318" x="0" y="16" width="39" height="5" rx="1"></rect>
+                    <polygon id="Path" stroke="#FFD318" fill="#A7A7A7" points="20 0 10 18.1181857 18.8835935 18.1181857 10 30.9058405 18.8835935 30.9058405 10 44 30 26.6508136 20 26.6508136 27.8428966 14.4549773 20 14.4549773 29.1789269 0"></polygon>
+                </g>
+                <text id="Volt" font-family="Inter-Bold, Inter" font-size="36" font-weight="bold" fill="#FFD318">
+                    <tspan x="0" y="35">Volt</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

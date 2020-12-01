@@ -1,0 +1,31 @@
+:root {
+  /* Colour Variables */
+  --highlight-color: #ffd318;
+  --danger-color: #c70c01;
+  --grey: #a7a7a7;
+  --white: #ffffff;
+  --black-light: #2a2a2a;
+  --black: #0f0f0f;
+  /* Typography Variables */
+  --header: 36px;
+  --header-2: 22px;
+  --paragraph: 16px;
+  --overline: 12px;
+  /* Other Elements */
+  --border-radius: 5px;
+}
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+
+h1 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+}

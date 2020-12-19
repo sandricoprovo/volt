@@ -54,7 +54,7 @@ const LinkList = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [linksList]);
 
-  // Conditonally set empty text
+  // Conditionally set empty text
   let emptyListText;
   if (currentView === 'links') {
     emptyListText = 'Click the add button to add a new link.';
@@ -71,7 +71,7 @@ const LinkList = ({
       <p
         style={{
           color: 'var(--highlight-color)',
-          marginTop: '22%',
+          margin: '0px',
         }}
       >
         {emptyListText}
@@ -90,7 +90,7 @@ const LinkList = ({
         style={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
           alignItems: 'center',
         }}
       >

@@ -6,7 +6,8 @@
   left: auto;
   top: 35%;
   z-index: 3;
-  width: 600px;
+  width: 80%;
+  max-width: 600px;
   height: 250px;
   padding: 8px;
   display: flex;
@@ -57,7 +58,7 @@ input[name="new-link"] {
 }
 
 .modal__response {
-  margin: 8px;
+  /* margin: 8px; */
   text-align: center;
   font-size: var(--overline);
   color: var(--grey);
@@ -71,6 +72,7 @@ input[name="new-link"] {
   border: none;
   border-radius: var(--border-radius);
   padding: 12px 32px;
+  outline: none;
   font-size: var(--overline);
   font-family: "Inter";
   font-weight: 500;

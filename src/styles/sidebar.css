@@ -19,6 +19,7 @@
 
 .sidebar__action-btn,
 .sidebar__view-btn {
+  outline: none;
   margin: 8px 8px;
   padding: 12px 32px;
   font-size: var(--paragraph);

@@ -35,7 +35,9 @@ const Settings = ({ changeHighlight, config }) => {
             />
           </label>
         </div>
-        <small className="settings__save-response">{saveResponse}</small>
+        <small className="settings__save-response">
+          {saveResponse || 'Paste your hex code above.'}
+        </small>
         <button
           className="settings__save-btn"
           type="submit"

@@ -80,7 +80,7 @@ function createMainWindow() {
       installExtension(REACT_DEVELOPER_TOOLS).catch((err) =>
         console.log('Error loading React DevTools: ', err)
       );
-      mainWindow.webContents.openDevTools();
+      mainWindow.webContents.openDevTools({ mode: 'detach' });
     }
   });
 

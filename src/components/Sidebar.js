@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { HashRouter as Router, Link } from 'react-router-dom';
 import '../styles/sidebar.css';
-import Logo from '../images/logo.png';
+import Logo from '../images/logo.svg';
 
 const Sidebar = ({ showAddModal, toggleView }) => (
   <section className="sidebar__container">
@@ -25,28 +25,28 @@ const Sidebar = ({ showAddModal, toggleView }) => (
     </div>
     <div>
       <Router>
-        <button className="sidebar__view-btn" type="button">
-          <Link
-            to="/"
-            style={{
-              textDecoration: 'none',
-              color: 'color: var(--highlight-color)',
-            }}
-          >
+        <Link
+          to="/"
+          style={{
+            textDecoration: 'none',
+            color: 'color: var(--highlight-color)',
+          }}
+        >
+          <button className="sidebar__view-btn" type="button">
             Links
-          </Link>
-        </button>
-        <button className="sidebar__view-btn" type="button">
-          <Link
-            to="/settings"
-            style={{
-              textDecoration: 'none',
-              color: 'color: var(--highlight-color)',
-            }}
-          >
+          </button>
+        </Link>
+        <Link
+          to="/settings"
+          style={{
+            textDecoration: 'none',
+            color: 'color: var(--highlight-color)',
+          }}
+        >
+          <button className="sidebar__view-btn" type="button">
             Settings
-          </Link>
-        </button>
+          </button>
+        </Link>
       </Router>
     </div>
   </section>

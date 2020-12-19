@@ -22,7 +22,15 @@
   margin-bottom: 24px;
 }
 
+.link__btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .link__btn {
+  outline: none;
   background-color: var(--black-light);
   padding: 8px 32px;
   border-radius: var(--border-radius);
@@ -51,4 +59,13 @@
 .link__archive-btn:hover {
   border: none;
   color: var(--danger-color);
+}
+
+@media screen and (max-width: 600px) {
+  .link__btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

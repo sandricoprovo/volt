@@ -12,8 +12,14 @@ const AddLinkModal = ({ isOpen, toggleSelf, saveLink }) => {
     <div className={showHideClass}>
       <form className="form__container" action="" method="post">
         <h1 className="modal__header">Add New Link</h1>
-        <input type="text" name="new-link" placeholder="Paste link here" />
-        <small className="modal__response">{saveResponse}</small>
+        <input
+          type="text"
+          name="new-link"
+          placeholder="https://twitter.com/home"
+        />
+        <small className="modal__response">
+          {saveResponse || 'Paste your link above.'}
+        </small>
         <div className="form__btns">
           <button
             className="modal__btn link__save"
@@ -24,6 +30,10 @@ const AddLinkModal = ({ isOpen, toggleSelf, saveLink }) => {
                 event,
                 document.querySelector('input[name="new-link"]')
               );
+
+              setTimeout(() => {
+                setSaveResponse('');
+              }, 2000);
               // Setting validation response to state to be shown on page
               setSaveResponse(isValidLink);
             }}

@@ -5,7 +5,7 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -13,7 +13,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -56,6 +56,7 @@
 }
 
 .settings__save-btn {
+  outline: none;
   background-color: var(--black);
   color: var(--highlight-color);
   border: 2px solid var(--highlight-color);
@@ -74,6 +75,7 @@
 
 .settings__default {
   padding: 8px;
+  outline: none;
   border: none;
   background-color: var(--black);
   color: var(--grey);

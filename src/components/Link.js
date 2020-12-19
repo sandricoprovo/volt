@@ -17,27 +17,29 @@ const Link = ({
   <div className="link__container" data-linkid={id}>
     <h1 className="link__title">{title}</h1>
     <h2 className="link__timestamp">Saved on {timestamp}</h2>
-    <button
-      className="link__btn link__view-btn"
-      onClick={() => openInBrowser(url)}
-      type="button"
-    >
-      View Page
-    </button>
-    <button
-      className="link__btn link__archive-btn"
-      onClick={() => toggleArchive(id)}
-      type="button"
-    >
-      {currentView === 'links' ? 'Archive' : 'Unarchive'}
-    </button>
-    <button
-      className="link__btn link__archive-btn"
-      onClick={() => deleteLink(id)}
-      type="button"
-    >
-      Delete
-    </button>
+    <div className="link__btn-container">
+      <button
+        className="link__btn link__view-btn"
+        onClick={() => openInBrowser(url)}
+        type="button"
+      >
+        Open in Browser
+      </button>
+      <button
+        className="link__btn link__archive-btn"
+        onClick={() => toggleArchive(id)}
+        type="button"
+      >
+        {currentView === 'links' ? 'Archive' : 'Unarchive'}
+      </button>
+      <button
+        className="link__btn link__archive-btn"
+        onClick={() => deleteLink(id)}
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
   </div>
 );
 
